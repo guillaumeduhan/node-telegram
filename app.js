@@ -3,6 +3,14 @@ const app = express()
 const PORT = process.env.PORT || 3000
 const telegram = require('./telegram.js')
 
+app.use(
+  express.urlencoded({
+    extended: true
+  })
+)
+
+app.use(express.json())
+
 require('dotenv').config()
 
 app.post('/message', (req, res) => {
