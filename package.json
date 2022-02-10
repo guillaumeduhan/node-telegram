@@ -1,0 +1,27 @@
+{
+  "name": "node-telegram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "author": "Guillaume Duhan",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js --ext js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "node-telegram-bot-api": "^0.53.0",
+    "nodemon": "^2.0.12"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "boilerplate"
+  ],
+  "engines": {
+    "node": "8"
+  }
+}
