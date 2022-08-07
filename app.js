@@ -13,8 +13,9 @@ app.use(express.json())
 
 require('dotenv').config()
 
-app.post('/message', (req, res) => {
-  telegram.sendMessage('Message received from API post URL.')
+app.all('/message', (req, res) => {
+  const { message } = req.body
+  telegram.sendMessage(message)
   res.send({
     status: 200,
     message: 'Message envoyé.'
