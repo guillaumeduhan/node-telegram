@@ -3,6 +3,9 @@ const app = express()
 const PORT = process.env.PORT || 3000
 const telegram = require('./telegram.js')
 
+// TELEGRAM_TOKEN=5425368755:AAF5r6rhUThXyN4VV1vx5EHC4JdLskZK-VA
+// TELEGRAM_CHANNEL_ID = -761450976
+
 app.use(
   express.urlencoded({
     extended: true
